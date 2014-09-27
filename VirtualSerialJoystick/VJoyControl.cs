@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using vJoyInterfaceWrap;
 
+
 namespace VirtualSerialJoystick
 {
     public partial class VJoyControl : vJoy
@@ -13,12 +14,12 @@ namespace VirtualSerialJoystick
         public Boolean isJoystickReady(){
              if (vJoyEnabled())
             {
-                Console.WriteLine("Failed getting vJoy Attributes");
+                  Console.WriteLine("Vendor: " + GetvJoyManufacturerString() + " Product: " + GetvJoyProductString() + " Version Number: " + GetvJoyVersion());
                  return true;
             }
             else
             {
-                Console.WriteLine("Vendor: %S\nProduct :%S\nVersion Number:%S\n", GetvJoyManufacturerString(), GetvJoyProductString(), GetvJoyVersion());
+                Console.WriteLine("Failed getting vJoy Attributes");
                  return false;
             }
         }

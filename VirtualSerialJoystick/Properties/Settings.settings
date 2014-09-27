@@ -1,7 +1,12 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VirtualSerialJoystick.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="maxIndex" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">145</Value>
+    </Setting>
+    <Setting Name="maxButton" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">128</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>
